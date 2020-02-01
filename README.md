@@ -4,3 +4,4 @@ explorations into topics I'm studying or find interesting in various technologie
 # Future Explorations
 Convert an array to a tree in javascript
 Convert the tree to a properly indented list and print it out.
+useReducer vs useState (sb report as example)
