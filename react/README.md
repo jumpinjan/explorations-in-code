@@ -10,13 +10,15 @@ Reducer - reducer and state share the same principle. They store an app state. T
 
 Reducers also can be shareable, so this is a good thing if you have a state that can be repeated across apps. But I don't use it very much because I'm not a huge fan of too much abstraction
 
+Use Context API when you have one React App and need global objects.
+
 Bottom line, 
 You will want to use Reducer instead of plenty of useState when you realize that your state is becoming too big or hard to manage (e.g. you have 10+ useState in a single component, or things like that). But understand that everything you do with useReducer you can do with useState
 
 
 I recommend that you start with useState until you get really comfortable with it and understand why useReducer would be preferable
-8:40
+
 95% of the cases useState will be enough
-8:40
+
 Mainly because if your state is getting too complicated, it might be a sign that something isn't right
 
