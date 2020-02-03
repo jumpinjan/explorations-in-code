@@ -1,6 +1,6 @@
 # About Hooks
 
-##About useState vs useReducer and the Context API (from the amazing @rafaelquintanilha)
+## About useState vs useReducer and the Context API (from the amazing @rafaelquintanilha)
 
 
 I think that the main differences between them are:
