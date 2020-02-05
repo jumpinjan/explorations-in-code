@@ -24,7 +24,7 @@ Mainly because if your state is getting too complicated, it might be a sign that
 
 # About spread operator (...) and properties in javascript (@rafaelquintanilha)
 
-his is a trick to dynamically add a property to an object. Suppose that I have the following object:
+This is a trick to dynamically add a property to an object. Suppose that I have the following object:
 
 const person = {
   name: data.name,
