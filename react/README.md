@@ -22,3 +22,28 @@ I recommend that you start with useState until you get really comfortable with i
 
 Mainly because if your state is getting too complicated, it might be a sign that something isn't right
 
+# About spread operator (...) and properties in javascript (@rafaelquintanilha)
+
+his is a trick to dynamically add a property to an object. Suppose that I have the following object:
+
+const person = {
+  name: data.name,
+  country: data.country
+}
+Now imagine that I want to declare this object but add a city property only if the person lives in the US.
+
+I can do the following:
+
+const person = {
+  name: data.name,
+  country: data.country
+}
+if ( data.country === "US" ) person.city = data.city;
+But now I had to declare the variable and mutate it right after, which can be cumbersome. You can dynamically add a property by using the spread operator:
+
+const person = {
+  name: "Janice",
+  country: "US",
+  ...(data.city === "US" && { city: data.city })
+}
+If data.city !== "US" then no object will be returned and the spread operator won't add any new property. Else, the object is returned and its attributes added to the person object.
